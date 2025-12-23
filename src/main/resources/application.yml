@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: cmdserver
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+    com.example.cmdserver: DEBUG
+command:
+  queue:
+    capacity: 1000
+    consumerThreads: 4
+    offerTimeout: 2s
+  executor:
+    threads: 8
+    commandTimeout: 5s
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

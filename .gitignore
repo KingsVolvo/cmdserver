@@ -1,0 +1,20 @@
+// filepath: c:\Project\cmdserver\.gitignore
+# Maven
+/target/
+!/src/main/resources/
+!/src/test/resources/
+
+# Spring Boot
+*.log
+*.tmp
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
